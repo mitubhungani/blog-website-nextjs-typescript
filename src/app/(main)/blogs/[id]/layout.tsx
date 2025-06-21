@@ -1,5 +1,3 @@
-// app/(main)/(dashboard)/blogs/[id]/layout.tsx
-
 import { ReactNode } from "react";
 
 // ✅ This function should only run on the server

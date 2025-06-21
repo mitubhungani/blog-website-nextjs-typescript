@@ -33,8 +33,6 @@ const Login = () => {
   });
 
   const onSubmit = (values: LoginFormValues) => {
-    // const users = JSON.parse(localStorage.getItem("Users") || "[]");
-
     const matchedUser = users.find(
       (user: LoginFormValues) =>
         user.email === values.email && user.password === values.password
@@ -42,9 +40,8 @@ const Login = () => {
 
     if (matchedUser) {
       loginUser(matchedUser);
-      // localStorage.setItem("loggedinUser", JSON.stringify(matchedUser));
       toast.success("Login Successful ✅");
-      router.push("/dashboard/blogs");
+      router.push("/");
     } else {
       toast.error("Invalid Credentials ❌");
     }

@@ -13,12 +13,14 @@ const HeroSection = () => {
         </h1>
 
         <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          Welcome to <span className="font-semibold text-blue-600">DreamBlog</span>, where passionate writers share their knowledge,
-          experiences, and creativity. Dive into a world of thought-provoking stories.
+          Welcome to{" "}
+          <span className="font-semibold text-blue-600">DreamBlog</span>, where
+          passionate writers share their knowledge, experiences, and creativity.
+          Dive into a world of thought-provoking stories.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-          <Link href="/dashboard/blogs">
+          <Link href="/blogs">
             <button className="px-6 py-3 text-white bg-[#a362ff] hover:bg-[#b286f0] rounded-lg text-sm font-semibold transition cursor-pointer">
               Explore Blog
             </button>

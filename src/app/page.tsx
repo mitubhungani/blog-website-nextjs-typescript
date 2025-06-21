@@ -1,7 +1,6 @@
 "use client";
 
 import FeaturedBlog from "@/components/featuredBlog/featuredBlog";
-// import Footer from "@/app/@footer/page";
 import HeroSection from "@/components/heroSection/heroSection";
 
 export default function Home() {
@@ -13,9 +12,6 @@ export default function Home() {
       <section>
         <FeaturedBlog />
       </section>
-      {/* <section>
-        <Footer />
-      </section> */}
     </div>
   );
 }

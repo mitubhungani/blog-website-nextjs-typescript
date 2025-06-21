@@ -12,11 +12,11 @@ export const loginSchema = z.object({
   });
 
   export const addBlogs = z.object({
-    id: z.string().optional(), // ✅ optional now
+    id: z.string().optional(), 
     title: z.string().min(2, { message: "Title must be at least 2 characters." }),
     content: z.string().min(10, { message: "Content must be at least 10 characters." }),
     image: z.string().url({ message: "Invalid image URL." }),
-    auther: z.string().optional(), // ✅ optional now
+    auther: z.string().optional(),
   });
   
   export const cooments =z.object({

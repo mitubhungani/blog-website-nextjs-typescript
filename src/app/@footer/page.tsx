@@ -2,17 +2,16 @@ import React from "react";
 import Link from "next/link";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
-
 const Footer = () => {
   return (
     <footer className="bg-gray-100 border-t border-gray-200 py-10 mt-10">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-        
         {/* Text Logo */}
         <div>
           <h2 className="text-2xl font-bold text-gray-800">DreamBlog</h2>
           <p className="text-sm text-gray-600 mt-2">
-            Discover inspiring stories, insights, and ideas from passionate writers.
+            Discover inspiring stories, insights, and ideas from passionate
+            writers.
           </p>
         </div>
 
@@ -40,14 +39,15 @@ const Footer = () => {
 
         {/* Social Media */}
         <div>
-          <h3 className="text-lg font-semibold text-gray-700 mb-4">Follow Us</h3>
+          <h3 className="text-lg font-semibold text-gray-700 mb-4">
+            Follow Us
+          </h3>
           <div className="flex items-center gap-4">
-          <FaGithub className="text-2xl cursor-pointer" />
+            <FaGithub className="text-2xl cursor-pointer" />
 
             <FaInstagram className="text-2xl cursor-pointer" />
 
-            <FaLinkedin className="text-2xl cursor-pointer"  />
-
+            <FaLinkedin className="text-2xl cursor-pointer" />
           </div>
         </div>
       </div>

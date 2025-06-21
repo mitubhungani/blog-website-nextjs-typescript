@@ -1,4 +1,3 @@
-
 "use client";
 
 import { Button } from "@/components/ui/button";
@@ -48,17 +47,16 @@ const Topbar = () => {
         >
           {/* Nav Links */}
           <nav className="flex gap-6 text-sm font-medium text-gray-700">
-          <Link href="/" className="hover:text-blue-600 transition-colors">
-            Home
-          </Link>
-          <Link
-            href="/blogs"
-            className="hover:text-blue-600 transition-colors"
-          >
-            Blogs
-          </Link>
-        </nav>
-
+            <Link href="/" className="hover:text-blue-600 transition-colors">
+              Home
+            </Link>
+            <Link
+              href="/blogs"
+              className="hover:text-blue-600 transition-colors"
+            >
+              Blogs
+            </Link>
+          </nav>
 
           {/* Auth Buttons or User Info */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
@@ -67,7 +65,7 @@ const Topbar = () => {
                 <div className="flex items-center gap-2">
                   <Avatar className="h-8 w-8">
                     <AvatarFallback>
-                      {user.username?.slice(0,1).toUpperCase()}
+                      {user.username?.slice(0, 1).toUpperCase()}
                     </AvatarFallback>
                   </Avatar>
                   <span className="text-sm font-medium text-gray-700">
